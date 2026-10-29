@@ -1,18 +1,32 @@
 # BullEye Bully Bash
 
-🐂🎯🥊
+A bull-themed Canvas arcade experiment with collision effects, score tracking, and a defense meter.
 
-BullEye Bully Bash is an exciting arcade game where you take control of a bull and unleash your wrath upon bullies. Your goal is to bash as many bullies as possible and score points. Enjoy the thrill of precise controls, stunning visual effects, and strategic gameplay.
+[Open the demo](https://hamzaxbella.github.io/Bulleye-Bully-Bash/) · [Browse the code](https://github.com/hamzaxbella/Bulleye-Bully-Bash)
 
-## Features:
-🎮 Play as a powerful bull and eliminate bullies with your mighty strength.
-⚡️ Experience smooth and responsive controls, allowing you to navigate with ease.
-🌆 Enjoy a visually appealing environment with randomly generated backgrounds.
-🛡️ Defend yourself by maintaining your armor, as each collision with a bully reduces your defense.
-🎯 Aim carefully and strategically to maximize your score and reach new high scores.
-🔥 Engage in intense gameplay as you avoid obstacles and navigate through challenging levels.
-🎧 Immerse yourself in an immersive gaming experience with captivating sound effects.
-🏆 Challenge your friends and compete for the highest score on the leaderboard.
-🌟 Easy-to-learn gameplay mechanics suitable for players of all ages.
+## Play
 
-Are you ready to show those bullies who's the boss? 🤜💥 Play BullEye Bully Bash now and unleash your inner bull! 🐂🔥
+Click the canvas to set the bull's target. Use `R` to restart and `D` to toggle the debug view. The source contains a score target of 100 and a game-over screen.
+
+The current mouse input updates the target on press/release; continuous drag behavior still needs refinement. This is a desktop mouse-and-keyboard experiment, with no online leaderboard or audio system implemented.
+
+## Run locally
+
+```bash
+git clone https://github.com/hamzaxbella/Bulleye-Bully-Bash.git
+cd Bulleye-Bully-Bash
+python3 -m http.server 8000
+```
+
+Open <http://localhost:8000> in a modern browser. There is no package installation or build step.
+
+## Inside
+
+| File | Purpose |
+| --- | --- |
+| `script.js` | Entity classes, collisions, input, scoring, and drawing |
+| `index.html` | Canvas and sprite assets |
+| `style.css` | Presentation |
+| `assets/` | Game images |
+
+Built with plain JavaScript and Canvas 2D. Included artwork retains its original ownership.
